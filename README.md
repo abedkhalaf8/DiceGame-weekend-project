@@ -1,2 +1,2 @@
-# DiceGame-weekend-project
- 
+# Pig Dice Game Weekend Project 
+# AppleSeeds Bootcamp
