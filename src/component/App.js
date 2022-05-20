@@ -1,6 +1,5 @@
 import './App.css';
 
-import GameButtons from './Game_buttons';
 import Players from './Game_players';
 import React from 'react';
 import Twodice from './two_dice';
@@ -20,8 +19,6 @@ export default class App extends React.Component {
                  <div className='GameBoard'>
                       <Players />
                       <Twodice />
-                     <GameButtons />
-               
              </div>
                   <p>MADE BY ABED KHALAF</p>
              </div>
