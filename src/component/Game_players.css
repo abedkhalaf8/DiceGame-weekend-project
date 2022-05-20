@@ -11,6 +11,13 @@
     left: 70px;
     background-color: black;
 }
+
+.Player1:hover {
+    background-color: rgba(255, 136, 0, 0.181)
+}
+.Player2:hover {
+    background-color: rgba(255, 136, 0, 0.181)
+}
 .Player2 {
     color:blueviolet;
     border-color: black;
@@ -39,12 +46,13 @@
 .current_score{
    position: relative;
    top: 10px;
-   color: red;
+   color: rgb(255, 255, 255);
    border-style: groove;
    border-radius: 15px;
    width: 120px;
-   left: 45px;
-   background-color: white;
+   left: 48px;
+   background-color: rgb(232, 144, 3);
+   border-width:1px
 }
 
 
