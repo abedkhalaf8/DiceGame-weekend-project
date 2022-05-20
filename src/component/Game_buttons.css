@@ -58,3 +58,9 @@
 .new_game:hover {
     background-color: aqua  !important;
 }
+
+
+.game_buttons a:link {
+    text-decoration: none;
+  }
+  
