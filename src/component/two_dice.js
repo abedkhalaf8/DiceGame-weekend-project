@@ -7,8 +7,8 @@ class Twodice extends React.Component {
        return (
            <div>
               <div className='two_dice'>
-                <div className='dice1'></div>
-                <div className='dice2'></div>
+                <img className='dice1' src={require('./imgs/dice1.png')} alt="dice1"/>
+                <img className='dice2' src={require('./imgs/dice2.png')} alt="dice2"/>
                 </div>
               </div>  
   ) 
