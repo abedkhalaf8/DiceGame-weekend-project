@@ -6,6 +6,7 @@ import React from 'react';
 import Twodice from './two_dice';
 
 export default class App extends React.Component {
+     
     render() {
         return (
              <div>
@@ -20,7 +21,8 @@ export default class App extends React.Component {
                       <Players />
                       <Twodice />
                      <GameButtons />
-                  </div>
+               
+             </div>
                   <p>MADE BY ABED KHALAF</p>
              </div>
          )
