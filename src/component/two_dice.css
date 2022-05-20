@@ -19,30 +19,45 @@
     left: 410px;
     top:90px;
 
+
 }
 
 .dots {
     position: relative;
     display: flex;
     color: rgb(255, 0, 170);
+    font-size: 20px;
+    font-weight:bold;
  
 }
-
 .dot_1 {
-
+  position: relative;
+  left: 14px;
+  top: 4px;
 }
 .dot_2 {
-    
+    position: relative;
+    top: 27px;
+    left: 2px;
 }
 .dot_3 {
-    
+    position: relative;
+    left: -9px;
+    top: 52px;
 }
 .dot_4 {
-    
+     position: relative;
+     left: 14px;
+     top: 4px;
 }
 .dot_5 {
-    
+    position: relative;
+    top: 27px;
+
+    left: 2px;
 }
 .dot_6 {
-    
+    position: relative;
+    left: -9px;
+    top: 52px;
 }
