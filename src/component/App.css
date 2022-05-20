@@ -1,18 +1,21 @@
 body { 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(245, 69, 69);
     font-family: 'Courier New', Courier, monospace;
 }
 
 .GameBoard {
     background-color: rgb(255, 225, 0);
     position: relative;
-    left: 29%;
-    top: 170px;
+    margin: 0 auto;
+    top: 1px;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 800px;
+    height: 600px;
     border-radius: 20px;
     border-style: groove;
+    border-width: 1px;
+    border-color: rgb(255, 3, 3);
 }
 .title {
     text-align: center;
@@ -20,8 +23,19 @@ body {
     background-color: rgb(0, 0, 0);
     border-color: black;
     border-style: groove;
-    border-radius: 20px;
-    color: white;
-    top: -12px;
+    color: rgb(237, 4, 120);
+    top: 10px;
+    border-radius: 10px;
     position: relative;
+    width: 490px;
+    margin: 0 auto;
+    height: 25px;
+    background-color: black;
+}
+
+p {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px
 }
