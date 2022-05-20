@@ -10,11 +10,12 @@ export default class App extends React.Component {
         return (
              <div>
                  <div className='GameBoard'>
-                 <h1 className='title'>DICE GAME WEEKEND PROJECT WITH REACTJS</h1>
+                 <h1 className='title'>Dice Game - Weekend Project with ReactJS</h1>
                       <Players />
                       <Twodice />
                      <GameButtons />
                   </div>
+                  <p>MADE BY ABED KHALAF</p>
              </div>
          )
      }
