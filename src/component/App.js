@@ -1,3 +1,5 @@
+import './App.css';
+
 import GameButtons from './Game_buttons';
 import Players from './Game_players';
 import React from 'react';
@@ -10,7 +12,7 @@ export default class App extends React.Component {
                  <div className='GameBoard'>
                       <Players />
                       <Twodice />
-                      <GameButtons />
+               4+9       <GameButtons />
                   </div>
              </div>
          )
