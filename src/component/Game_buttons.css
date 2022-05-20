@@ -49,3 +49,12 @@
 .game_buttons input:hover {
     background-color: rgba(246, 255, 0, 0.888);
 }
+
+
+.new_game {
+    background-color: white  !important;
+}
+
+.new_game:hover {
+    background-color: aqua  !important;
+}
