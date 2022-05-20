@@ -7,6 +7,8 @@
     top: -20px;
     position: relative;
     text-align: center;
+    width: 220px;
+    left: 70px;
 }
 .Player2 {
     color:blueviolet;
@@ -17,4 +19,7 @@
     top: -20px;
     position: relative;
     text-align: center;
+    width: 220px;
+    left: 70px;
+    margin-top: 5px;
 }
