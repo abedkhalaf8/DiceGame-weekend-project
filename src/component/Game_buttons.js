@@ -7,7 +7,7 @@ class GameButtons extends React.Component {
        return (
            <div>
               <div className='game_buttons'>
-                  <button className='new_game'>NEW GAME</button>
+                  <a href="./"><button type="button" className="new_game">NEW GAME</button></a>
                   <button className='roll_dice'>ROLL DICE</button>
                   <button className='hold'>HOLD</button>
                   <input type='text' className='final_score' placeholder='Final Score'></input>
