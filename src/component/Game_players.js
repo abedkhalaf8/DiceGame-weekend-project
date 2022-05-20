@@ -1,5 +1,6 @@
-import React from 'react';
+import './Game_players.css'
 
+import React from 'react';
 class Players extends React.Component {
    render() {
        return (

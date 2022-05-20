@@ -10,9 +10,10 @@ export default class App extends React.Component {
         return (
              <div>
                  <div className='GameBoard'>
+                 <h1 className='title'>DICE GAME WEEKEND PROJECT WITH REACTJS</h1>
                       <Players />
                       <Twodice />
-               4+9       <GameButtons />
+                     <GameButtons />
                   </div>
              </div>
          )
