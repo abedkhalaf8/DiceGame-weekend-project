@@ -9,8 +9,14 @@ export default class App extends React.Component {
     render() {
         return (
              <div>
+                 <div className="project-title">
+                      <div className="row">
+                      <div className="col-md-12 text-center">
+                       <h3 className="animate-charcter">Dice Game - Weekend Project with ReactJS</h3>
+                     </div>
+                  </div>
+               </div>
                  <div className='GameBoard'>
-                 <h1 className='title'>Dice Game - Weekend Project with ReactJS</h1>
                       <Players />
                       <Twodice />
                      <GameButtons />
@@ -20,6 +26,7 @@ export default class App extends React.Component {
          )
      }
 }
+
 
 // The following exercise contains the following subjects:
 // ● JSX
