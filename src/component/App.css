@@ -1,3 +1,27 @@
 body { 
-    background-color: rgb(255, 194, 194);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.GameBoard {
+    background-color: rgb(236, 220, 101);
+    position: relative;
+    left: 29%;
+    top: 170px;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    border-radius: 20px;
+    border-style: groove;
+}
+.title {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    border-color: black;
+    border-style: groove;
+    border-radius: 20px;
+    color: white;
+    top: -12px;
+    position: relative;
 }

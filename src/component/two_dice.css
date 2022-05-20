@@ -1,0 +1,48 @@
+.dice1{
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 80px;
+    border-style: groove;
+    border-color: rgb(255, 0, 0);
+}
+.dice2{
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 80px;
+    border-style: groove;
+    border-color: rgb(255, 0, 0);
+    margin-top: 10px;
+ 
+}
+.two_dice {
+    position: absolute;
+    left: 410px;
+    top:90px;
+
+}
+
+.dots {
+    position: relative;
+    display: flex;
+    color: rgb(255, 0, 170);
+ 
+}
+
+.dot_1 {
+
+}
+.dot_2 {
+    
+}
+.dot_3 {
+    
+}
+.dot_4 {
+    
+}
+.dot_5 {
+    
+}
+.dot_6 {
+    
+}

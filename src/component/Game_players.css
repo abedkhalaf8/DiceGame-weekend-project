@@ -1,0 +1,20 @@
+.Player1 {
+    color:blueviolet;
+    border-color: black;
+    border-style: groove;
+    border-radius: 20px;
+    border-width: 1px;
+    top: -20px;
+    position: relative;
+    text-align: center;
+}
+.Player2 {
+    color:blueviolet;
+    border-color: black;
+    border-style: groove;
+    border-radius: 20px;
+    border-width: 1px;
+    top: -20px;
+    position: relative;
+    text-align: center;
+}

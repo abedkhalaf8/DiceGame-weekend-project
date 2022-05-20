@@ -1,5 +1,6 @@
-import React from 'react';
+import './Game_buttons.css'
 
+import React from 'react';
 class GameButtons extends React.Component {
    render() {
        return (
