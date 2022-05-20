@@ -4,7 +4,7 @@ body {
 }
 
 .GameBoard {
-    background-color: rgb(236, 220, 101);
+    background-color: rgb(255, 225, 0);
     position: relative;
     left: 29%;
     top: 170px;
