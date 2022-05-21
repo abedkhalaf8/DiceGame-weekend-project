@@ -30,7 +30,7 @@ export default class App extends React.Component {
 //    }
    whichPlayer = (whichOne) => {
      this.setState({switch_player: whichOne});
-     console.log("whichone ",whichOne);
+     console.log("switch player-> ",whichOne);
      
 }
 

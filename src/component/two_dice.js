@@ -32,9 +32,9 @@ class Twodice extends React.Component {
    this.setState({img2: array[dice2]});
    if ( 6 === dice1 && 6 === dice2){
      console.log('6!!')
-    this.setState({Current_Score: 0});
-    this.props.current_score(this.state.Current_Score);
-         if ( this.state.switchPlayer === 'Player1'){
+       this.setState({Current_Score: 0});
+       this.props.current_score(this.state.Current_Score);
+         if (this.state.switchPlayer === 'Player1'){
           this.setState({switchPlayer : 'Player2'});
          } else {
          this.setState({switchPlayer : 'Player1'});
