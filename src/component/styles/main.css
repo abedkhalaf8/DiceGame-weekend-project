@@ -1,0 +1,9 @@
+.Main {
+    margin: auto;
+    width: 70%;
+    border: 3px solid #ad2121;
+    border-radius: 15px;
+    background-color: yellow;
+    padding: 10px;
+    height: 1200px;
+}

@@ -1,0 +1,120 @@
+.Player1 {
+    color:blueviolet;
+    border-color: black;
+    border-style: groove;
+    border-radius: 20px;
+    border-width: 1px;
+    top: 230px;
+    position: relative;
+    text-align: center;
+    width: 310px;
+    left: 10%;
+    height: 260px;
+    background-color: rgb(0, 0, 0);
+}
+
+.Player2 {
+    color:blueviolet;
+    border-color: black;
+    border-style: groove;
+    border-radius: 20px;
+    border-width: 1px;
+    top: 150px;
+    position: relative;
+    text-align: center;
+    width: 310px;
+    height: 260px;
+    margin-top: 5px;
+    background-color: black;
+
+}
+.players-title {
+    border-radius: 20px;
+    border-style: groove;
+    background-color: goldenrod;
+    top: 1px;
+    position: relative;
+    border-width: 0ch;
+}
+
+
+.current_score{
+   position: relative;
+   top: 115px;
+   color: rgb(247, 0, 0);
+   border-style: groove;
+   border-radius: 15px;
+   width: 130px;
+   height: 30px;
+   left: 100px;
+   line-height: 30px;
+   background-color: rgb(255, 255, 255);
+   border-width:1px;
+   font-weight: bold;
+}
+
+
+.score {
+    position: relative;
+    top: 40px;
+    color: rgb(0, 17, 255);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.current_score #current {
+    color: black;
+}
+
+
+p {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 27px;
+    top: 50px;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+     background-image: linear-gradient(
+       -225deg,
+       #231557 0%,
+       #44107a 29%,
+       #ff1361 67%,
+       #fff800 100%
+     );
+     background-size: auto auto;
+     background-clip: border-box;
+     background-size: 200% auto;
+     color: #fff;
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     animation: textclip 2s linear infinite;
+     display: inline-block;
+     font-size: 30px;
+   }
+   @keyframes textclip {
+     to {
+       background-position: 200% center;
+     }
+   }
+   .project-title {
+       text-align: center;
+   }
+
+
+#light {
+    background-color: #fff800;
+}
+
+#light2 {
+    background-color: #fff800;
+}
+
+#nope {
+    background-color: black;
+}
+
