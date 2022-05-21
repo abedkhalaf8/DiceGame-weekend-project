@@ -15,24 +15,23 @@ light2 = (player) => {
     } 
     return 'nope';
 }
-
 render() {
        return (
            <div>
              <div className='Player1' id={this.light()}>
                   <h1 className='players-title'>Player 1</h1>
-                  <label className='score'>0</label>
+                  <label className='score'>{this.props.player1}</label>
                   <div className='current_score'>
                       <label id='current'>CUTRRENT </label>
-                      <label>0</label>
+                      <label>{this.props.current_score}</label>
                   </div>
              </div>
              <div className='Player2' id={this.light2()}>
                   <h1 className='players-title'>Player 2</h1>
-                  <label className='score'>0</label>
+                  <label className='score'>{this.props.player2}</label>
                   <div className='current_score'>
                       <label id='current'>CUTRRENT </label>
-                      <label>0</label>
+                      <label>{this.props.current_score}</label>
                   </div>
              </div>
            </div>
