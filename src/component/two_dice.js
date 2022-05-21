@@ -65,8 +65,15 @@ class Twodice extends React.Component {
 
   HoldTheScore = () => {
     this.setState({player1: this.state.Current_Score});
-    this.props.score(this.state.player1);
     this.winOrLose();
+    if (this.state.switchPlayer === 'Player1'){
+      this.setState({switchPlayer: 'Player2'});
+      this.props.which_player(this.state.switchPlayer);
+   }
+   if (this.state.switchPlayer === 'Player2'){
+    this.setState({switchPlayer: 'Player1'});
+    this.props.which_player(this.state.switchPlayer);
+   } 
   }
 
   player1OrPlayer2 = () => {
@@ -74,6 +81,7 @@ class Twodice extends React.Component {
       this.props.which_player(this.state.switchPlayer);
   }
   if (this.state.switchPlayer === 'Player2'){
+     this.setState({switchPlayer: 'Player2'});
      this.props.which_player(this.state.switchPlayer);
   }
   }

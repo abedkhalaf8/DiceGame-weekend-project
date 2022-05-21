@@ -6,23 +6,32 @@ import Twodice from './two_dice';
 
 export default class App extends React.Component {
    state = {
-        player1: 0,
-        player2: 0,
+        current_score : 0,
         player1_score:0,
         player2_score:0,
         projectTitle: 'Dice Game - Weekend Project with ReactJS',
         switch_player: "",
+        switch_player_light: 'light'
      }
    result = (current_score) => {
-         this.setState({player1: current_score})
+         this.setState({current_score: current_score})
+         console.log('yoo',current_score);
+         if(this.state.switch_player === "Player1"){
+          this.setState({player1_score: current_score});
+          console.log(`Score1: ${this.state.player1_score}`)
+       }
+       if(this.state.switch_player === "Player2"){
+          this.setState({player2_score: current_score});
+          console.log(`Score2: ${this.state.player2_score}`)
+       }
    }
-   player_score = (score) => {
-       this.setState({player1_score: score});
-       this.setState({projectTitle:"mmmmmmmmmm i need to fix this"})
-   }
+//    player_score = (score) => {
+        
+//    }
    whichPlayer = (whichOne) => {
      this.setState({switch_player: whichOne});
-     console.log(whichOne);
+     console.log("whichone ",whichOne);
+     
 }
 
     render() {
@@ -36,7 +45,7 @@ export default class App extends React.Component {
                   </div>
                </div>
                  <div className='GameBoard'>
-                      <Players score={this.state.player1_score} current_score={this.state.player1}  which_player={this.state.switch_player}/>
+                      <Players player1={this.state.player1_score} player2={this.state.player2_score} light={this.state.switch_player_light} score={this.state.player1_score} current_score={this.state.current_score}  which_player={this.state.switch_player}/>
                       <Twodice score={this.player_score} current_score={this.result} which_player={this.whichPlayer}/>
              </div>
                   <p>MADE BY ABED KHALAF</p>
