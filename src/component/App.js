@@ -5,12 +5,19 @@ import React from 'react';
 import Twodice from './two_dice';
 
 export default class App extends React.Component {
-   state = {player1: 0, player2: 0, player1_score:0, player2_score:0}
+   state = {
+        player1: 0,
+        player2: 0,
+        player1_score:0,
+        player2_score:0,
+        projectTitle: 'Dice Game - Weekend Project with ReactJS'
+     }
     result = (current_score) => {
          this.setState({player1: current_score})
    }
    player_score = (score) => {
-       this.setState({player1_score: score})
+       this.setState({player1_score: score});
+       this.setState({projectTitle:"mmmmmmmmmm i need to fix this"})
    }
     render() {
         return (
@@ -18,7 +25,7 @@ export default class App extends React.Component {
                  <div className="project-title">
                       <div className="row">
                       <div className="col-md-12 text-center">
-                       <h3 className="animate-charcter">Dice Game - Weekend Project with ReactJS</h3>
+                       <h3 className="animate-charcter">{this.state.projectTitle}</h3>
                      </div>
                   </div>
                </div>
