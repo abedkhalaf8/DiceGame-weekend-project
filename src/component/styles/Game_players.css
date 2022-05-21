@@ -4,11 +4,12 @@
     border-style: groove;
     border-radius: 20px;
     border-width: 1px;
-    top: 60px;
+    top: 230px;
     position: relative;
     text-align: center;
-    width: 220px;
-    left: 70px;
+    width: 310px;
+    left: 10%;
+    height: 260px;
     background-color: rgb(0, 0, 0);
 }
 
@@ -21,8 +22,8 @@
     top: 150px;
     position: relative;
     text-align: center;
-    width: 220px;
-    left: 70px;
+    width: 310px;
+    height: 260px;
     margin-top: 5px;
     background-color: black;
 
@@ -31,7 +32,7 @@
     border-radius: 20px;
     border-style: groove;
     background-color: goldenrod;
-    top: -25px;
+    top: 1px;
     position: relative;
     border-width: 0ch;
 }
@@ -39,12 +40,14 @@
 
 .current_score{
    position: relative;
-   top: 10px;
+   top: 115px;
    color: rgb(247, 0, 0);
    border-style: groove;
    border-radius: 15px;
-   width: 120px;
-   left: 48px;
+   width: 130px;
+   height: 30px;
+   left: 100px;
+   line-height: 30px;
    background-color: rgb(255, 255, 255);
    border-width:1px;
    font-weight: bold;
@@ -53,9 +56,10 @@
 
 .score {
     position: relative;
-    top: -20px;
-    color: white;
+    top: 40px;
+    color: rgb(0, 17, 255);
     font-size: 40px;
+    font-weight: bold;
 }
 
 
@@ -64,29 +68,6 @@
 }
 
 
-#light{
-    background-color: rgba(255, 255, 0, 0.148);
-    color: black;
-}
-  
-
-#nope {
-    background-color: black;
-}
-.GameBoard {
-    background-color: rgb(255, 225, 0);
-    position: relative;
-    margin: 0 auto;
-    top: 1px;
-    align-items: center;
-    justify-content: center;
-    width: 800px;
-    height: 500px;
-    border-radius: 20px;
-    border-style: groove;
-    border-width: 1px;
-    border-color: rgb(255, 3, 3);
-}
 p {
     position: relative;
     justify-content: center;
@@ -123,3 +104,17 @@ p {
    .project-title {
        text-align: center;
    }
+
+
+#light {
+    background-color: #fff800;
+}
+
+#light2 {
+    background-color: #fff800;
+}
+
+#nope {
+    background-color: black;
+}
+

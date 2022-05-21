@@ -1,6 +1,7 @@
 import './styles/two_dice.css'
 import './styles/Game_buttons.css'
 import './styles/Game_players.css'
+import './styles/main.css'
 
 import Dice1 from './imgs/dice1.png';
 import Dice2 from './imgs/dice2.png';
@@ -24,7 +25,7 @@ class GameBoard extends React.Component {
     lose: false,   
     winner: "",   
     loser: "" ,
-    projectTitle: "Dice Game - Weekend Project with ReactJS"
+ 
 }
 
   rollTheDice = () => {
@@ -55,22 +56,25 @@ class GameBoard extends React.Component {
   winOrLose = () => {
     if (this.state.final_score !== 0) {
        if(this.state.Score === this.state.final_score) {
-          this.setState({win: true});
           if (this.state.switchPlayer === 'Player1'){
                this.setState({winner: 'Player1'});
+               this.theWinner();
           }
           if (this.state.switchPlayer === 'Player2'){
             this.setState({winner: 'Player2'});
+            this.theWinner();
+
           }
         }      
       if(this.state.Score > this.state.final_score) {
-         this.setState({lose: true});
         if (this.state.switchPlayer === 'Player1'){
         this.setState({loser: 'Player1'});
-
+        this.theLoser();
        }
        if (this.state.switchPlayer === 'Player2'){
         this.setState({loser: 'Player2'});
+
+        this.theLoser();
      }
     }
   }
@@ -91,16 +95,48 @@ class GameBoard extends React.Component {
     this.setState({final_score: e.target.value});
   
   }
+
+  light = () => {
+    if (this.state.switchPlayer === 'Player1'){
+      return 'light';
+    }
+    return 'nope'; 
+  }
+  light2 = () => {
+    if (this.state.switchPlayer === 'Player2'){
+      return 'light';
+    } 
+    return 'nope'; 
+  }
 render() {
        return (    
            <div>
+             <div className="Main">
               <div className="project-title">
                       <div className="row">
                       <div className="col-md-12 text-center">
-                       <h3 className="animate-charcter">{this.state.projectTitle}</h3>
+                       <h3 className="animate-charcter">Dice Game - Weekend Project with ReactJS</h3>
                      </div>
                   </div>
                </div>
+               <div className='Players'>
+                   <div className='Player1' id={this.light()}>
+                    <h1 className='players-title' id={this.light()}>Player 1</h1>
+                    <label className='score'>{this.state.player1_score}</label>
+                    <div className='current_score'>
+                        <label id='current'>CUTRRENT </label>
+                        <label>{this.state.Current_Score}</label>
+                    </div>
+                    <div className='Player2' id={this.light2()}>
+                    <h1 className='players-title' id={this.light2()}>Player 2</h1>
+                    <label className='score'>{this.state.player2_score}</label>
+                    <div className='current_score'>
+                        <label id='current'>CUTRRENT </label>
+                        <label>{this.state.Current_Score}</label>
+                    </div>
+                    </div> 
+             </div>
+             </div>
                <div className='two_dice'>
                 <img className='dice1' src={this.state.img1} alt="dice1"></img>
                 <img className='dice2' src={this.state.img2} alt="dice2"></img>
@@ -111,26 +147,8 @@ render() {
                      <button onClick={this.HoldTheScore} className='hold'>HOLD</button>
                      <input type='text' onChange={this.getValue} className='final_score' placeholder='Final Score'></input>
                 </div>
-
-               <div className='Players'>
-                   <div className='Player1' >
-                    <h1 className='players-title'>Player 1</h1>
-                    <label className='score'>{this.state.player1_score}</label>
-                    <div className='current_score'>
-                        <label id='current'>CUTRRENT </label>
-                        <label>{this.state.Current_Score}</label>
-                    </div>
-                    <div className='Player2' >
-                    <h1 className='players-title'>Player 2</h1>
-                    <label className='score'>{this.state.player2_score}</label>
-                    <div className='current_score'>
-                        <label id='current'>CUTRRENT </label>
-                        <label>{this.state.Current_Score}</label>
-                    </div>
-                    </div> 
              </div>
-             </div>
-             </div>
+      </div>
 )
 }
 }

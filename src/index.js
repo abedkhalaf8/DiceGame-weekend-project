@@ -1,6 +1,9 @@
+import './component/styles/App.css';
+
 import GameBoard from './component/game_board';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 class App extends React.Component {
     render() {
         return (
