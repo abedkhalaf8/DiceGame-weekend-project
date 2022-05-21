@@ -16,10 +16,10 @@ class Players extends React.Component {
              </div>
              <div className='Player2'>
                   <h1 className='players-title'>Player 2</h1>
-                  <label className='score'>0</label>
+                  <label className='score'>{this.props.score}</label>
                   <div className='current_score'>
                       <label id='current'>CUTRRENT </label>
-                      <label>0</label>
+                      <label>{this.props.current_score}</label>
                   </div>
              </div>
            </div>
