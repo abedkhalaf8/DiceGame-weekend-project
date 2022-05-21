@@ -12,6 +12,7 @@ export default class App extends React.Component {
         player2_score:0,
         projectTitle: 'Dice Game - Weekend Project with ReactJS',
         switch_player: "",
+        switch_player_light: 'light'
      }
    result = (current_score) => {
          this.setState({player1: current_score})
@@ -22,7 +23,8 @@ export default class App extends React.Component {
    }
    whichPlayer = (whichOne) => {
      this.setState({switch_player: whichOne});
-     console.log(whichOne);
+     console.log("whichone ",whichOne);
+     
 }
 
     render() {
@@ -36,7 +38,7 @@ export default class App extends React.Component {
                   </div>
                </div>
                  <div className='GameBoard'>
-                      <Players score={this.state.player1_score} current_score={this.state.player1}  which_player={this.state.switch_player}/>
+                      <Players light={this.state.switch_player_light} score={this.state.player1_score} current_score={this.state.player1}  which_player={this.state.switch_player}/>
                       <Twodice score={this.player_score} current_score={this.result} which_player={this.whichPlayer}/>
              </div>
                   <p>MADE BY ABED KHALAF</p>
