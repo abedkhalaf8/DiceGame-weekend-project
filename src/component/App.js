@@ -10,15 +10,21 @@ export default class App extends React.Component {
         player2: 0,
         player1_score:0,
         player2_score:0,
-        projectTitle: 'Dice Game - Weekend Project with ReactJS'
+        projectTitle: 'Dice Game - Weekend Project with ReactJS',
+        switch_player: "",
      }
-    result = (current_score) => {
+   result = (current_score) => {
          this.setState({player1: current_score})
    }
    player_score = (score) => {
        this.setState({player1_score: score});
        this.setState({projectTitle:"mmmmmmmmmm i need to fix this"})
    }
+   whichPlayer = (whichOne) => {
+     this.setState({switch_player: whichOne});
+     console.log(whichOne);
+}
+
     render() {
         return (
              <div>
@@ -30,8 +36,8 @@ export default class App extends React.Component {
                   </div>
                </div>
                  <div className='GameBoard'>
-                      <Players score={this.state.player1_score} current_score={this.state.player1} />
-                      <Twodice score={this.player_score} current_score={this.result}/>
+                      <Players score={this.state.player1_score} current_score={this.state.player1}  which_player={this.state.switch_player}/>
+                      <Twodice score={this.player_score} current_score={this.result} which_player={this.whichPlayer}/>
              </div>
                   <p>MADE BY ABED KHALAF</p>
              </div>

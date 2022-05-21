@@ -14,7 +14,15 @@ class Twodice extends React.Component {
     img1: Dice1,
     img2: Dice2,
     Current_Score:0,
-    Score: 0
+    Score: 0,
+    final_score: 0,
+    player1: 0,
+    player2: 0,
+    switchPlayer : 'Player1',
+    player1_score: 0,
+    player1_current_score: 0,
+    player2_score: 0,
+    player2_current_score: 0
 }
   rollTheDice = () => {
    const dice1 = Math.floor(Math.random() * 6) + 1;
@@ -22,14 +30,54 @@ class Twodice extends React.Component {
    const array = ["",Dice1, Dice2, Dice3, Dice4, Dice5, Dice6];
    this.setState({img1: array[dice1]});
    this.setState({img2: array[dice2]});
+   if ( 6 === dice1 && 6 === dice2){
+     console.log('6!!')
+    this.setState({Current_Score: 0});
+    this.props.current_score(this.state.Current_Score);
+         if ( this.state.switchPlayer === 'Player1'){
+          this.setState({switchPlayer : 'Player2'});
+         } else {
+         this.setState({switchPlayer : 'Player1'});
+          }
+   } else {
    this.setState({Current_Score: this.state.Current_Score + dice1 + dice2});
-   const result = this.state.Current_Score;
-   this.props.current_score(result);
+   this.props.current_score(this.state.Current_Score);
+    }
+  this.player1OrPlayer2();
+
+}
+
+  winOrLose = () => {
+    if (this.state.final_score !== 0) {
+    if(this.state.Score === this.state.final_score) {
+      console.log('win'); 
+    }
+    if(this.state.Score >= this.state.final_score) {
+      console.log('pass the target score');
+    }
   }
+    }
+
+   getValue = (e) => { 
+    this.setState({final_score: e.target.value});
+  }
+
+
   HoldTheScore = () => {
-    this.setState({Score: this.state.Current_Score});
-    this.props.score(this.state.Score);
+    this.setState({player1: this.state.Current_Score});
+    this.props.score(this.state.player1);
+    this.winOrLose();
   }
+
+  player1OrPlayer2 = () => {
+  if (this.state.switchPlayer === 'Player1'){
+      this.props.which_player(this.state.switchPlayer);
+  }
+  if (this.state.switchPlayer === 'Player2'){
+     this.props.which_player(this.state.switchPlayer);
+  }
+  }
+
    render() {
        return (    
            <div>
@@ -41,7 +89,7 @@ class Twodice extends React.Component {
                      <a href="./"><button type="button" className="new_game">NEW GAME</button></a>
                      <button onClick={this.rollTheDice} className='roll_dice'>ROLL DICE</button>
                      <button onClick={this.HoldTheScore} className='hold'>HOLD</button>
-                     <input type='text' className='final_score' placeholder='Final Score'></input>
+                     <input type='text' onChange={this.getValue} className='final_score' placeholder='Final Score'></input>
                 </div>
               </div>
   ) 
