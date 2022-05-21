@@ -46,13 +46,14 @@
 .current_score{
    position: relative;
    top: 10px;
-   color: rgb(255, 255, 255);
+   color: rgb(247, 0, 0);
    border-style: groove;
    border-radius: 15px;
    width: 120px;
    left: 48px;
    background-color: rgb(232, 144, 3);
-   border-width:1px
+   border-width:1px;
+   font-weight: bold;
 }
 
 
