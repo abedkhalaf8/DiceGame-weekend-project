@@ -83,11 +83,15 @@ class GameBoard extends React.Component {
     this.winOrLose();
     if (this.state.switchPlayer === 'Player1'){
       this.setState({switchPlayer: 'Player2'});
-      this.setState({player1_score  : this.state.Current_Score});
+      this.setState({player1_score  : this.state.player1_score + this.state.Current_Score});
+      this.setState({Current_Score: 0});
    }
    if (this.state.switchPlayer === 'Player2'){
     this.setState({switchPlayer: 'Player1'});
-    this.setState({  player2_score  : this.state.Current_Score });
+    this.setState({  player2_score  : this.state.player2_score + this.state.Current_Score });
+    this.setState({Current_Score: 0});
+
+
    } 
   }
   
