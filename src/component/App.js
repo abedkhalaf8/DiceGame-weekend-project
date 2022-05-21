@@ -5,7 +5,13 @@ import React from 'react';
 import Twodice from './two_dice';
 
 export default class App extends React.Component {
-     
+   state = {player1: 0, player2: 0, player1_score:0, player2_score:0}
+    result = (current_score) => {
+         this.setState({player1: current_score})
+   }
+   player_score = (score) => {
+       this.setState({player1_score: score})
+   }
     render() {
         return (
              <div>
@@ -17,8 +23,8 @@ export default class App extends React.Component {
                   </div>
                </div>
                  <div className='GameBoard'>
-                      <Players />
-                      <Twodice />
+                      <Players score={this.state.player1_score} current_score={this.state.player1} />
+                      <Twodice score={this.player_score} current_score={this.result}/>
              </div>
                   <p>MADE BY ABED KHALAF</p>
              </div>
