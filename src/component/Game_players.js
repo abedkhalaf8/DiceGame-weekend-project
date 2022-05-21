@@ -10,7 +10,7 @@ class Players extends React.Component {
                   <h1 className='players-title'>Player 1</h1>
                   <label className='score'>{this.props.score}</label>
                   <div className='current_score'>
-                      <label>CUTRRENT </label>
+                      <label id='current'>CUTRRENT </label>
                       <label>{this.props.current_score}</label>
                   </div>
              </div>
@@ -18,7 +18,7 @@ class Players extends React.Component {
                   <h1 className='players-title'>Player 2</h1>
                   <label className='score'>0</label>
                   <div className='current_score'>
-                      <label>CUTRRENT </label>
+                      <label id='current'>CUTRRENT </label>
                       <label>0</label>
                   </div>
              </div>

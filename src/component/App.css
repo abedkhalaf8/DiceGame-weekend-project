@@ -21,7 +21,8 @@ p {
     position: relative;
     justify-content: center;
     text-align: center;
-    font-size: 25px
+    font-size: 27px;
+    top: 50px;
 }
 
 .animate-charcter {
@@ -42,7 +43,7 @@ p {
      -webkit-text-fill-color: transparent;
      animation: textclip 2s linear infinite;
      display: inline-block;
-     font-size: 23px;
+     font-size: 30px;
    }
    @keyframes textclip {
      to {
