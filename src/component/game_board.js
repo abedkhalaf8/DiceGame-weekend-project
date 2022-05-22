@@ -21,10 +21,8 @@ class GameBoard extends React.Component {
     switchPlayer : 'Player1',  
     player1_score: 0, 
     player2_score: 0,  
-    win: false,   
-    lose: false,   
     winner: "",   
-    loser: "" ,
+    loser: "" 
  
 }
 
