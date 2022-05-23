@@ -20,8 +20,7 @@ class GameBoard extends React.Component {
     switchPlayer : 'Player1',  
     player1_score: 0, 
     player2_score: 0,   
-
-
+    }
   rollTheDice = () => {
    const dice1 = Math.floor(Math.random() * 6) + 1;
    const dice2 = Math.floor(Math.random() * 6) + 1;
