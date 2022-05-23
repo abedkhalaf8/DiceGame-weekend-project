@@ -31,15 +31,13 @@ class GameBoard extends React.Component {
    this.setState({img2: array[dice2]});
 
          if ( 6 === dice1 && 6 === dice2){            
-             this.setState({})
-             if (this.state.switchPlayer === 'Player1'){
-                   this.setState({player1_score: this.state.Current_Score});
+             
+             if (this.state.switchPlayer === 'Player1'){        
                    this.setState({Current_Score: 0});
                    this.setState({switchPlayer : 'Player2'});
                  
              }
-             if (this.state.switchPlayer === 'Player2'){
-                  this.setState({player2_score: this.state.Current_Score2});
+             if (this.state.switchPlayer === 'Player2'){          
                   this.setState({Current_Score2: 0});
                   this.setState({switchPlayer : 'Player1'});
                } 
@@ -49,7 +47,7 @@ class GameBoard extends React.Component {
                } else { 
                 this.setState({Current_Score2: this.state.Current_Score2 + dice1 + dice2});
                }
-           }
+          }
 
 
   winOrLose = () => {
