@@ -20,7 +20,7 @@ class GameBoard extends React.Component {
     switchPlayer : 'Player1',  
     player1_score: 0, 
     player2_score: 0,   
-
+  }
 
   rollTheDice = () => {
    const dice1 = Math.floor(Math.random() * 6) + 1;
@@ -103,11 +103,7 @@ render() {
            <div>
              <div className="Main">
               <div className="project-title">
-                      <div className="row">
-                      <div className="col-md-12 text-center">
                        <h3 className="animate-charcter">Dice Game - Weekend Project with ReactJS</h3>
-                     </div>
-                  </div>
                </div>
                <div className='Players'>
                    <div className='Player1' id={this.light()}>

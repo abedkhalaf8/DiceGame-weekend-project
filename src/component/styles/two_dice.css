@@ -1,19 +1,19 @@
 .dice1{
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 
 }
 .dice2{
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     position: relative;
-    right: 150px;
-    top: 170px; 
+    right: 250px;
+    top: 280px; 
 }
 .two_dice {
     position: absolute;
     left: 47%;
-    top:405px;
+    top: 350px
 }
 
