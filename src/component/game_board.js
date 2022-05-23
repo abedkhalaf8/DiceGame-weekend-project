@@ -16,7 +16,7 @@ class GameBoard extends React.Component {
     img2: Dice2, 
     Current_Score: 0, 
     Current_Score2: 0, 
-    final_score: 10,   
+    final_score: 0,   
     switchPlayer : 'Player1',  
     player1_score: 0, 
     player2_score: 0,   
